@@ -1,0 +1,39 @@
+# Logs y Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Compilados de Vite y Frontend
+frontend/dist/
+frontend/dist-ssr/
+*.local
+
+# Java y Maven
+backend/target/
+backend/.mvn/wrapper/maven-wrapper.jar
+*.class
+*.jar
+*.war
+
+# IDE y Editores
+.idea/
+*.iml
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+
+# Electron y Empaquetado
+dist-electron/
+dist-bin/*.jar
+!dist-bin/.gitkeep
+
+# Base de datos SQLite local de pruebas
+*.db
+*.db-journal
+*.db-wal

@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+  code, pre {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+/* Print Styles */
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  
+  /* Ticket de 80mm */
+  .ticket-80mm {
+    width: 76mm !important;
+    max-width: 76mm !important;
+    margin: 0 auto !important;
+    padding: 2mm !important;
+    font-size: 10px !important;
+    line-height: 1.15 !important;
+    color: black !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  /* Formato Factura A4 / Media Carta */
+  .factura-a4 {
+    width: 100% !important;
+    max-width: 200mm !important;
+    margin: 0 auto !important;
+    padding: 6mm 10mm !important;
+    color: black !important;
+    font-size: 11px !important;
+    line-height: 1.35 !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  /* Formato A4 Contrato */
+  .contrato-a4 {
+    width: 100% !important;
+    max-width: 190mm !important;
+    margin: 0 auto !important;
+    padding: 10mm !important;
+    color: black !important;
+    font-size: 12px !important;
+    line-height: 1.5 !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  @page {
+    margin: 6mm 8mm;
+    size: auto;
+  }
+}
